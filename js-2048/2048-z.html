@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>2048</title>
+  <link rel="stylesheet" href="2048-z.css"/>
+  <script src="2048-z.js"></script>
+ </head>
+ <body>
+	<p>Score:<span id="score">0</span></p>
+	<div id="gridPanel"></div>
+	<div id="gameOver">
+		<div></div>
+		<p>
+			Game Over!<br/>
+			Score:<span id="finalScore"></span><br/>
+			<a id="restart" class="button" onclick="game.start()">Try again!</a>
+		</p>
+	</div>
+ </body>
+ <!--onload事件触发-->
+</html>

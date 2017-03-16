@@ -1,0 +1,79 @@
+@charset "utf-8";
+/*变量*/
+@mainColor:#e92322;
+//使用变量
+body{
+  color:@mainColor;
+}
+// 混入Mixin
+.redFont{
+  color: red;
+}
+.redBorder{
+  border: 1px solid red;
+}
+/*红色文字和边框 通过class混合*/
+.redFontBorder-class{
+  .redFont();
+  .redBorder();
+}
+/*方法不能和css类名重复*/
+.redFont-fun(){
+  color: pink;
+}
+.redBorder(){
+  border: 1px solid red;
+}
+/*通过func混合*/
+.redFontBorder-func{
+  .redFont-fun();
+}
+/*嵌套*/
+.wjs_header{
+  border-bottom: 1px solid #cccccc;
+  color: #666666;
+  font-size: 12px;
+  position: relative;
+  z-index: 1001;
+  .wjs_app{
+    color: #666666;
+    position: relative;
+    display: block;
+    img{
+      display: none;
+    }
+    &:hover{
+      img{display: block;
+      position: absolute;
+      top: 40px;
+      left: 50%;
+      margin-left: -60px;
+      border: 1px solid #e0e0e0;
+      border-top: none;
+      }
+    }
+  }
+  >.container{
+    >.row{
+      div{
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        &+div{
+          color:red;
+        }
+      }
+    }
+  }
+}
+/*导入 import*/
+@import "color";
+.color{
+  color: @gray;
+}
+
+
+
+
+
+

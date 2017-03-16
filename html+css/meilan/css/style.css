@@ -1,0 +1,113 @@
+/*begin css初始化*/
+html,body,ol,ul,li,dl,dt,dd,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img,input{margin: 0;padding: 0;}
+body{font-size: 12px;color: #444444;}
+.clear:after{content:"";height: 0;line-height: 0;display: block;visibility: hidden;clear: both;}
+.clear{zoom:1;}
+.container{width: 970px;margin: 0 auto;}
+a{text-decoration: none;color: #444444;}
+a:hover{color:#e4393c;}
+li{list-style: none;}
+/*end css初始化*/
+/*begin 头部*/
+.header{height: 26px;background-color: #f7f7f7;border-bottom: 1px solid #d8d8d8;}
+.header_left{float: left;line-height: 26px;}
+.header_right{float: right;}
+.header_right ul li{float: left;line-height: 26px;padding-right: 10px;}
+/*end 头部*/
+/*begin logo 搜索框部分*/
+.logo{height: 98px;}
+.tupian{width: 204px;height: 54px;float: left;background: url(../img/biaozhi.gif);margin:25px 0 0 10px;}
+.sousuo{float: right;width: 519px;height: 30px;padding: 5px 5px 5px 4px;border: 1px solid #c9c9c9;margin-top: 29px;}
+.s_left{width: 420px;height: 30px;border: none;background: url(../img/shuru.gif);float: left;outline: none;}
+.s_right{width: 98px;height: 30px;float: left;}
+/*end logo 搜索框部分*/
+/*begin 导航*/
+.nav{height: 27px;background: url(../img/daohang.png);margin-bottom: 10px;}
+.nav ul li{float: left;line-height: 25px;font: bold 16px "微软雅黑";padding: 0 15px;}
+.nav ul li a{color: #306bae;}
+.nav ul li a span{color: #fff;}
+/*end 导航*/
+.ad{height: 210px;margin-bottom: 14px;}
+/*begin 广告左*/
+.ad_left{width: 200px;height: 210px;float: left;overflow: hidden;}
+.ad_left h1{height: 30px;line-height: 30px;background-color: #0266a3;font-size: 14px;color: #fff;padding-left: 20px;}
+.ad_left ul{height: 180px;padding-top: 13px;background:#ebf0f6 url(../img/renxing.gif) no-repeat;padding-left: 38px;}
+.ad_left ul li{height: 28px;}
+/*end 广告左*/
+/*begin 广告中*/
+.ad_center{width: 520px;height: 210px;float: left;margin: 0 10px;}
+/*end 广告中*/
+/*begin 广告右*/
+.ad_right{width: 230px;height: 210px;float: left;}
+.right_top{width: 228px;height: 93px;margin-bottom: 20px;border: 1px solid #dddddd;background-color:#f7faff; }
+.right_top h1{font-size: 12px;margin: 7px 0 0 18px;}
+.right_top_dz{height: 74px;background: url(../img/dzb.gif) no-repeat 10px 20px;}
+.right_top_dz:before{content: "";display: table;}
+.right_top_dz p{margin: 24px 0 0 59px;}
+.right_bottom{width: 230px;height: 95px;background-color: #f7f7f7;}
+.right_bottom p.question{height: 40px;line-height: 40px;color: #999999;font-size: 16px;text-align: center;font-weight: 600;}
+.right_bottom p.phone{font-size: 14px;color: #51A5E3;text-align: center;font-weight: 600;background: url(../img/dianhua.gif) no-repeat 50px center;}
+.right_bottom .message{margin: 8px 0 0 75px;}
+/*end 广告右*/
+/*begin 建筑材料*/
+.building{height: 34px;line-height: 34px;border-top: 2px solid #C3D7E4;background-color: #ECF1F7;font-size: 14px;padding-left: 20px;margin-bottom: 11px;}
+/*end 建筑材料*/
+/*begin 建筑材料下具体商品类内容*/
+.materials{margin-bottom: 15px;}
+.materials_left{width: 719px;height: 312px;border: 1px solid #D8D8D8;float: left;padding: 15px 3px 17px 5px;}
+.materials_right{width: 228px;height: 344px;border: 1px solid #D8D8D8;float: right}
+.materials_left_t{width: 698px;height: 143px;padding-left: 21px;}
+.materials_left_c{border-bottom: 1px solid #eeeeee;margin: 14px 0 11px 0;}
+.materials_left_b{width: 698px;height: 143px;padding-left: 21px;}
+.products{width: 349px;height: 143px;float: left;}
+.products .img{width: 99px;height: 143px;float: left;}
+.products .introduce{width: 250px;height: 143px;float: left;}
+.products .img .img_detail{width: 97px;height: 100px;border: 1px solid #cacaca;text-align: center;}
+.products .img .img_detail img{vertical-align: middle;}
+.products .img .img_detail span{width: 0;height: 100%;overflow: hidden;display: inline-block;vertical-align: middle;}
+.products .img .btn_buy{margin-top: 15px;}
+p.one{font-size: 14px;height: 38px;line-height: 38px;padding-left: 10px;}
+p.two{padding-left: 15px;color: #863E01;}
+p.three{padding-left: 11px;padding-top: 22px;}
+.introduce span{color: #E23E34;font-size: 14px;font-weight: bold;}
+p.four{padding:20px 0 0 10px;}
+.materials_right h1{font-size: 12px;height: 28px;line-height: 28px;padding-left: 10px;border-bottom: 1px solid #E0E6F0;background-color: #FBFBFB;}
+.materials_right ul{margin-top: 11px;margin-left: 10px;}
+.materials_right ul li {height: 24px;line-height: 24px;padding-left:13px;background: url(../img/fk.gif) no-repeat left center;}
+/*end 建筑材料下具体商品类内容*/
+/*begin 儿童安全座椅下具体商品类内容*/
+.chair{margin-bottom: 15px;height: 326px;}
+.chair_left{width: 729px;float: left;}
+.chair_left_top{width: 729px;height: 23px;}
+.chair_left_top span{float: right;font-weight: bold;line-height: 23px;margin-right: 15px;}
+.chair_left_top span a{font-size: 12px;color: #1A66B3;}
+.chair_left_bottom{width: 709px;height: 283px;border:1px solid #CACACA;border-top: 2px solid #00B0E7;padding: 5px 13px 12px 5px;}
+.chair_left_bottom .safe-chair{width: 163px;height: 283px;float: left;margin-right: 18px;}
+.chair_left_bottom .mr{margin-right: 0;}
+.chair_left_bottom .safe-chair p{text-align: center;}
+p.yg{height: 42px;text-indent: 5px;margin-top: 5px;text-indent: 8px;line-height: 20px;}
+p.sh{margin-top: 8px;color: #999999;}
+p.sc{margin-top: 8px;color: #999999;}
+p.zx{margin-top: 8px;color: #999999;}
+p.zx span{font-size: 14px;color: #A10000;font-weight: bold;}
+.chair_right{width: 230px;height: 326px;float:right;}
+.chair_right .shengjiang{border-right: 1px solid #CBCBCB;border-bottom: 1px solid #CBCBCB; margin: 2px 0 10px 8px;}
+.chair_right .bianxing{margin-left: 7px;}
+/*end 儿童安全座椅下具体商品类内容*/
+/*begin 工艺美术品*/
+.art-right{width: 230px;  height: 346px;  float: right;}
+.art-right h1{height: 30px;border-bottom: 1px solid #CACACA;padding-left: 10px;font-size: 14px;line-height: 30px;background-color: #f8f8f8;margin: 5px 0 12px 0;}
+.art-right li{line-height: 21px;}
+.art-right li.a{height: 86px;}
+.art-right li.a img{float: left;}
+.art-right li.a p,.art-right li span{color: #999;}
+.art-right li.a p{padding-left: 106px;}
+/*begin 工艺美术品*/
+/*begin 友情链接*/
+.link{height: 102px;border-top: 1px solid #DDDDDD;}
+.link p{text-align:center;margin-top: 25px;}
+/*begin 友情链接*/
+/*begin 底部信息*/
+footer{height: 90px;border-top: 3px solid #0A7EC3;text-align: center;}
+footer span{display: inline-block;margin-top: 13px;height:26px;line-height:26px;font-size: 14px;}
+/*end 底部信息*/

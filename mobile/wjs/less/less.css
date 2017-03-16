@@ -1,0 +1,58 @@
+@charset "utf-8";
+/*变量*/
+body {
+  color: #e92322;
+}
+.redFont {
+  color: red;
+}
+.redBorder {
+  border: 1px solid red;
+}
+/*红色文字和边框 通过class混合*/
+.redFontBorder-class {
+  color: red;
+  border: 1px solid red;
+}
+/*方法不能和css类名重复*/
+/*通过func混合*/
+.redFontBorder-func {
+  color: pink;
+}
+/*嵌套*/
+.wjs_header {
+  border-bottom: 1px solid #cccccc;
+  color: #666666;
+  font-size: 12px;
+  position: relative;
+  z-index: 1001;
+}
+.wjs_header .wjs_app {
+  color: #666666;
+  position: relative;
+  display: block;
+}
+.wjs_header .wjs_app img {
+  display: none;
+}
+.wjs_header .wjs_app:hover img {
+  display: block;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  margin-left: -60px;
+  border: 1px solid #e0e0e0;
+  border-top: none;
+}
+.wjs_header > .container > .row div {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+.wjs_header > .container > .row div + div {
+  color: red;
+}
+/*导入 import*/
+.color {
+  color: #cccccc;
+}

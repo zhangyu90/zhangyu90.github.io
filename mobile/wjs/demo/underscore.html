@@ -1,0 +1,50 @@
+<!--html5的标准文档结构-->
+<!DOCTYPE html>
+<!--指定文本的语言 中文-简体-->
+<html lang="zh-CN">
+<head>
+    <!--指定当前网页的编码格式-->
+    <meta charset="utf-8">
+    <!--指定当前的IE浏览器用它最新的渲染引擎 来渲染我们的网页-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--只会在移动端识别  视口  当前的宽度等于设备的宽度，默认的缩放比1.0，不予许用户自行缩放-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+
+    <title>title</title>
+
+    <!-- Bootstrap -->
+    <!--引入核心css文件-->
+    <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="../lib/html5shiv/html5shiv.min.js"></script>
+    <script src="../lib/respond/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div id="box"></div>
+
+<!-- TODO -->
+<!--使用了undersocre的each方法
+第一个参数  就当前遍历的对象
+第二个从那时当前遍历的索引
+-->
+<script type="text/template" id="template">
+    <div>
+        <%_.each(model,function(item,i){%>
+            <p><%-item.name%></p>
+        <%});%>
+    </div>
+</script>
+<script src="../lib/jquery/jquery.min.js"></script>
+<script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="../lib/underscore/underscore-min.js"></script>
+<script>
+    $(function(){
+        var data = [{name:'zhangyu'},{name:'xiaohong'}];
+        var template = _.template($('#template').html());
+        $('#box').html(template({model:data}));
+    });
+</script>
+</body>
+</html>
